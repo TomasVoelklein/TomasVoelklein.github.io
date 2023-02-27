@@ -1,0 +1,732 @@
+/* resolucion para pantallas anchas */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: #c4c4c4;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.logo p {
+    width: 100px;
+    height: 100px;
+
+
+}
+
+.logo img {
+    width: 185px;
+    height: 185px;
+    cursor: pointer;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0 50px;
+    background-color: lightcoral;
+}
+
+ul li {
+    font-style: italic;
+    display: inline-block;
+    list-style: none;
+    text-decoration: underline;
+    padding: 6px 20px;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+ul li:hover {
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: #ff4321;
+    color: #fff;
+}
+
+header {
+    position: absolute;
+    bottom: 40%;
+    top: 20%;
+    padding: 0 50px;
+}
+
+header h1 {
+    font-size: 5rem;
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 8ch;
+
+    animation: typing 4s steps(15) backwards infinite, blink .9s infinite backwards;
+    overflow: hidden;
+}
+
+@keyframes typing {
+
+    from {
+        width: 0
+    }
+
+    to {
+        width: 48%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+
+}
+
+header h2 {
+    font-size: 4rem;
+}
+
+header p {
+    padding: 22px 22px 10px 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 2.2rem;
+    background-color: #f83d048f;
+    border-radius: 20px;
+    box-shadow: 2px 2px 50px rgba(255, 127, 80, 0.747);
+    color: aliceblue;
+
+}
+
+header button {
+    padding: 0 5px;
+    width: 140px;
+    outline: none;
+    border: 0;
+    height: 40px;
+    font-weight: 800;
+    background-color: #ff4321;
+    transition: width 0.5s;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #fff;
+
+
+
+}
+
+header button img {
+    display: none;
+}
+
+header button:hover img {
+    display: block;
+}
+
+header button:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .yo {
+    height: 479px;
+    width: 550px;
+    right: 10%;
+    bottom: 0;
+    z-index: 999;
+    position: absolute;
+    flex: 1;
+}
+
+.container .fondo-yo {
+    position: absolute;
+    height: 550px;
+    width: 550px;
+    right: 9%;
+    bottom: 0;
+    flex: 2;
+}
+
+.icon {
+    position: absolute;
+    left: 5%;
+    bottom: 8%;
+    padding: 0 10px;
+    box-shadow: 2px 2px 50px coral;
+    border-radius: 5px;
+}
+
+.icon>i {
+    font-size: 4rem;
+    padding: 0 10px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.icon>i:hover {
+    background-color: #ff4321;
+}
+
+/* resolucion para computadoras */
+
+@media (max-width: 1500px) {
+
+    .container {
+        height: 100vh;
+        width: 100%;
+        background-color: #c4c4c4;
+        font-family: 'Roboto', sans-serif;
+        position: relative;
+    }
+
+    .logo {
+        font-weight: 600;
+        font-size: 3.8rem;
+
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 50px;
+        background-color: lightcoral;
+    }
+
+    ul li {
+        font-style: italic;
+        display: inline-block;
+        list-style: none;
+        text-decoration: underline;
+        padding: 6px 20px;
+        font-weight: 1000;
+        font-size: 1.7rem;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+    }
+
+    ul li:hover {
+        border-radius: 20px;
+        text-decoration: none;
+        background-color: #ff4321;
+        color: #fff;
+    }
+
+    header {
+        position: absolute;
+        bottom: 30%;
+        padding: 0 50px;
+        transition: all 0.3s ease 0s;
+        margin-top: 100px;
+    }
+
+    header h1 {
+        font-size: 5rem;
+        animation: typing 0.1s steps(14.9) backwards infinite, blink 10s;
+        overflow: hidden;
+    }
+
+    @keyframes typing {
+
+        from {
+            width: 0
+        }
+
+        to {
+            width: 59%;
+        }
+    }
+
+    @keyframes blink {
+        50% {
+            border-color: transparent
+        }
+
+    }
+
+
+
+    header h2 {
+        font-size: 4rem;
+    }
+
+    header p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+
+    }
+
+    /* boton conoceme! */
+    header button {
+        padding: 0 5px;
+        width: 140px;
+        outline: none;
+        border: 0;
+        height: 40px;
+        font-weight: 800;
+        background-color: #ff4321;
+        transition: width 0.5s;
+        cursor: pointer;
+        border-radius: 20px;
+        color: #fff;
+
+
+
+    }
+
+    header button img {
+        display: none;
+    }
+
+    header button:hover img {
+        display: block;
+    }
+
+    header button:hover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 160px;
+
+    }
+
+    .home {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container .yo {
+        height: 320px;
+        width: 280px;
+        right: 10%;
+        bottom: 0;
+        z-index: 999;
+        position: absolute;
+        flex: 1;
+        transition: all 0.3s ease 0s;
+    }
+
+    .container .fondo-yo {
+        position: absolute;
+        height: 340px;
+        width: 280px;
+        right: 8%;
+        bottom: 0;
+        flex: 2;
+        transition: all 0.3s ease 0s;
+    }
+
+    .container .fondo-yo>i {
+        transition: all 0.3s ease 0s;
+    }
+
+    .icon {
+        position: absolute;
+        bottom: 8%;
+        padding: 0 50px;
+    }
+
+    .icon>i {
+        font-size: 4rem;
+        padding: 0 10px;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        ;
+    }
+
+    .icon>i:hover {
+        background-color: #ff4321;
+    }
+
+}
+
+
+/* resolucion tablets*/
+
+@media (max-width: 720px) {
+
+    .container {
+        height: 100vh;
+        width: 100%;
+        background-color: #c4c4c4;
+        font-family: 'Roboto', sans-serif;
+        position: absolute;
+    }
+
+    .logo {
+        font-weight: 600;
+        font-size: 3.8rem;
+        display: none;
+
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 33px 26px;
+        background-color: lightcoral;
+    }
+
+    ul li {
+        font-style: "normal";
+        display: inline-block;
+        list-style: none;
+        text-decoration: underline;
+        padding: 6px 20px;
+        font-weight: 1000;
+        font-size: 1.7rem;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+    }
+
+    ul li:hover {
+        border-radius: 20px;
+        text-decoration: none;
+        background-color: #ff4321;
+        color: #fff;
+    }
+
+    header {
+        position: absolute;
+        bottom: 30%;
+        padding: 0 50px;
+        transition: all 0.3s ease 0s;
+    }
+
+    header h1 {
+        font-size: 4rem;
+        height: 100px;
+        transition: all 0.3s ease 0s;
+        animation: typing 0.1s steps(14.9) backwards infinite, blink 10s;
+        overflow: hidden;
+    }
+
+    @keyframes typing {
+
+        from {
+            width: 0
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes blink {
+        40% {
+            border-color: transparent
+        }
+
+    }
+
+    header h2 {
+        font-size: 6rem;
+        height: 137px;
+        transition: all 0.3s ease 0s;
+
+    }
+
+    header p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+
+    }
+
+    header button {
+        padding: 0 5px;
+        width: 140px;
+        outline: none;
+        border: 0;
+        height: 40px;
+        font-weight: 800;
+        background-color: #ff4321;
+        transition: width 0.5s;
+        cursor: pointer;
+        border-radius: 20px;
+        color: #fff;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 140px;
+        margin-left: 150px;
+
+
+    }
+
+    header button img {
+        display: none;
+    }
+
+    header button:hover img {
+        display: none;
+    }
+
+    header button:hover {
+        display: inline-block;
+
+
+    }
+
+    .home {
+        display: none;
+        flex-wrap: wrap;
+    }
+
+    .container .yo {
+        height: 300px;
+        width: 325px;
+        right: 10%;
+        bottom: 0;
+        z-index: 999;
+        position: absolute;
+        flex: 1;
+        display: none;
+    }
+
+    .container .fondo-yo {
+        position: absolute;
+        height: 380px;
+        width: 320px;
+        right: 15%;
+        bottom: 0;
+        flex: 2;
+        display: none;
+    }
+
+    .icon {
+        position: absolute;
+        bottom: 5%;
+
+        padding: 0 0px 0 0px;
+        margin-left: 110px;
+    }
+
+    .icon>i {
+        font-size: 8rem;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        ;
+    }
+
+    .icon>i:hover {
+        background-color: #ff4321;
+    }
+
+}
+
+/* resolucion para celulares */
+
+@media (max-width: 500px) {
+
+    .container {
+        height: 100vh;
+        width: 100%;
+        background-color: #c4c4c4;
+        font-family: 'Roboto', sans-serif;
+        position: absolute;
+    }
+
+    .logo {
+        font-weight: 600;
+        font-size: 3.8rem;
+        display: flex;
+        margin-left: 100px;
+
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 33px 26px;
+        background-color: lightcoral;
+    }
+
+    ul li {
+        font-style: "normal";
+        display: inline-block;
+        list-style: none;
+        text-decoration: underline;
+        padding: 6px 20px;
+        font-weight: 1000;
+        font-size: 1.7rem;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        display: none
+    }
+
+    ul li:hover {
+        border-radius: 20px;
+        text-decoration: none;
+        background-color: #ff4321;
+        color: #fff;
+    }
+
+    header {
+
+        bottom: 30%;
+        padding: 0 1px 0 15px;
+        transition: all 0.3s ease 0s;
+        width: 266px;
+        height: 500px;
+        margin-top: 0px;
+        top: 250px;
+        margin-top: 0px;
+    }
+
+    /* Este es el "bienvenidos" */
+    header h1 {
+        display: none;
+        font-size: 4rem;
+        height: 40px;
+        transition: all 0.3s ease 0s;
+        animation: typing 0.1s steps(14.9) backwards infinite, blink 10s;
+        overflow: hidden;
+    }
+
+    @keyframes typing {
+
+        from {
+            width: 0
+        }
+
+        to {
+            width: 65%;
+        }
+    }
+
+    @keyframes blink {
+        10% {
+            border-color: transparent
+        }
+
+    }
+
+    header h2 {
+        font-size: 4rem;
+        height: 137px;
+        transition: all 0.3s ease 0s;
+        display: none;
+
+    }
+
+    header p {
+        height: 432px;
+        width: 244px;
+        padding-right: 10px;
+        margin-top: 20px;
+        margin-right: 0;
+        margin-bottom: 20px;
+        margin-left: 90px;
+        font-size: 2.2rem;
+
+
+    }
+
+    header button {
+        padding: 0 5px;
+        width: 140px;
+        outline: none;
+        border: 0;
+        height: 40px;
+        font-weight: 800;
+        background-color: #ff4321;
+        transition: width 0.5s;
+        cursor: pointer;
+        border-radius: 20px;
+        color: #fff;
+        margin-left: 130px;
+    }
+
+    header button img {
+        display: none;
+    }
+
+    header button:hover img {
+        display: none;
+    }
+
+    header button:hover {
+        display: inline-block;
+
+
+    }
+
+    .home {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container .yo {
+        height: 300px;
+        width: 325px;
+        right: 10%;
+        bottom: 0;
+        z-index: 999;
+        position: absolute;
+        flex: 1;
+        display: none;
+    }
+
+    .container .fondo-yo {
+        position: absolute;
+        height: 380px;
+        width: 320px;
+        right: 15%;
+        bottom: 0;
+        flex: 2;
+        display: none;
+    }
+
+    .icon {
+        position: absolute;
+        width: 220px;
+        bottom: 5%;
+        right: 8%;
+        padding: 0 0px 0 0px;
+        margin-left: 90px;
+    }
+
+    .icon>i {
+        font-size: 5rem;
+
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        ;
+    }
+
+    .icon>i:hover {
+        background-color: #ff4321;
+    }
+
+}

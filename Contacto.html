@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="shortcut icon" href="/images/LOGO.png" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/estilos-contacto.css">
+	<title>Contacto</title>
+	
+</head>
+
+<body>
+	<!-- Barra de navegación -->
+	<header>
+		<nav>
+			<ul>
+				<li><a onclick="window.location.href='index.html';">Inicio</a></li>
+				<li><a href="/Contacto.html">Contacto</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="/Sobre-mi.html">Sobre Mi!</a></li>
+			</ul>
+		</nav>
+		<div class="logo">
+			<a href="/index.html"><img src="/images/LOGO.png" alt="Logotipo"></a>
+		</div>
+	</header>
+	
+	
+	
+	<!-- Formulario de contacto -->
+	<form id="mi-formulario" action="" method="post" >
+		<h2>Contacto</h2>
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="asunto">Asunto:</label>
+		<input type="text" id="asunto" name="asunto" required>
+
+		<label for="mensaje">Mensaje:</label>
+		<textarea id="mensaje" name="mensaje" required></textarea>
+
+		<input type="submit" value="Enviar">
+	</form>
+
+</body>
+
+</html>
